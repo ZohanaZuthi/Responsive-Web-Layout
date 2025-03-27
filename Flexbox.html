@@ -1,0 +1,58 @@
+<!-- Flexbox, short for Flexible Box Layout, is a CSS layout module designed to help you arrange 
+ and align elements in a container efficiently and responsively,
+  especially when the size of the items is unknown or dynamic. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox</title>
+    <style>
+        .container {
+            border: 2px solid salmon;
+            /* to make the boxes side by side */
+            display: flex;
+            /* to keep the boxes in the center */
+            /*Justify mainly manipulates horizontally*/
+            justify-content: center;
+            /*align manipulates content vertically*/
+            /*align-items;center*/
+            flex-direction: row-reverse;
+            /* we can salso put space-around*/
+            height:250px;
+            /*this following instructions fit the screen by breaking the line in two or more line*/
+            flex-wrap:wrap-reverse;
+        }
+
+        .box {
+            border: 2px dashed tomato;
+            width: 50px;
+            height: 50px;
+            /*margin: 5px;*/
+        }
+    </style>
+</head>
+<body>
+    <h1>Flexbox Layout</h1>
+    <div class="container">
+        <div class="box">Box-1</div>
+        <div class="box">Box-2</div>
+        <div class="box">Box-3</div>
+        <div class="box">Box-4</div>
+        <div class="box">Box-5</div>
+        <div class="box">Box-6</div>
+        <div class="box">Box-1</div>
+        <div class="box">Box-2</div>
+        <div class="box">Box-3</div>
+        <div class="box">Box-4</div>
+        <div class="box">Box-5</div>
+        <div class="box">Box-6</div>
+        <div class="box">Box-1</div>
+        <div class="box">Box-2</div>
+        <div class="box">Box-3</div>
+        <div class="box">Box-4</div>
+        <div class="box">Box-5</div>
+        <div class="box">Box-6</div>
+    </div>
+</body>
+</html>
