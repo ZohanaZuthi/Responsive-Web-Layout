@@ -12,8 +12,18 @@
         }
         nav a{
             text-decoration:none;
-            color:black;
-
+            color:black;}
+        .login-form-container{
+            display:flex;
+            justify-content: center;
+        }
+        .login-form{
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            border:2px solid white;
+            width:50%;
+            margin:30px;
 
         }
     </style>
@@ -27,5 +37,14 @@
     </div>
         <a href="">Login</a>
     </nav>
+   <section class="login-form-container">
+    <form class="login-form">
+        <h3>Please Login</h3>
+        <input type="email" name="" id="" placeholder="Your Email">
+        <input type="password" name="" id="" placeholder="Your Password">
+        <input type="Submit" value="Login">
+
+    </form>
+   </section>
 </body>
 </html>
